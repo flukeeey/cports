@@ -1,0 +1,5 @@
+type = process
+# TODO: Fix using seccomp allowlist? (-W)
+command = /usr/sbin/usbguard-daemon -s -C
+depends-on = local.target
+before = login.target
