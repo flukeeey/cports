@@ -1,6 +1,6 @@
 pkgname = "mpv-mpris"
 pkgver = "1.2"
-pkgrel = 0
+pkgrel = 1
 build_style = "makefile"
 make_check_target = "test"
 make_use_env = True
