@@ -1,6 +1,6 @@
 pkgname = "ffmpeg"
-pkgver = "8.1.2"
-pkgrel = 3
+pkgver = "9.0.1"
+pkgrel = 0
 build_style = "configure"
 configure_args = [
     "--prefix=/usr",
@@ -13,7 +13,6 @@ configure_args = [
     # features
     "--disable-alsa",
     "--disable-indev=oss",
-    "--disable-libcelt",
     "--disable-libopencore_amrnb",
     "--disable-libopencore_amrwb",
     "--disable-libspeex",
@@ -47,7 +46,6 @@ configure_args = [
     "--enable-librsvg",
     "--enable-librtmp",
     "--enable-librubberband",
-    "--enable-libshaderc",
     "--enable-libsoxr",
     "--enable-libsvtav1",
     "--enable-libtheora",
@@ -73,6 +71,7 @@ configure_args = [
 make_install_args = ["install-man"]
 make_check_args = ["-j1"]
 hostmakedepends = [
+    "glslang-progs",
     "nasm",
     "perl",
     "pkgconf",
@@ -125,6 +124,7 @@ makedepends = [
     "sdl2-compat-devel",
     "shaderc-devel",
     "soxr-devel",
+    "spirv-headers",
     "svt-av1-devel",
     "v4l-utils-devel",
     "vapoursynth-devel",
@@ -142,7 +142,7 @@ pkgdesc = "Decoding, encoding and streaming software"
 license = "GPL-3.0-or-later"
 url = "https://ffmpeg.org"
 source = f"{url}/releases/ffmpeg-{pkgver}.tar.xz"
-sha256 = "464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c"
+sha256 = "cf38e0e28c7e5605942c4a77755349b0145804a397af37eb1fb4c77cb237f635"
 # some conf checks like for some pthread functions don't detect interfaces
 # without it
 tool_flags = {
