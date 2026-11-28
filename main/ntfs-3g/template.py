@@ -1,5 +1,5 @@
 pkgname = "ntfs-3g"
-pkgver = "2026.7.7"
+pkgver = "2026.11.23"
 pkgrel = 0
 build_style = "gnu_configure"
 configure_args = [
@@ -25,7 +25,7 @@ pkgdesc = "NTFS FUSE driver and tools"
 license = "GPL-2.0-or-later AND LGPL-2.0-or-later"
 url = "https://github.com/tuxera/ntfs-3g"
 source = f"https://tuxera.com/opensource/ntfs-3g_ntfsprogs-{pkgver}.tgz"
-sha256 = "d67b769025d32860549d35c2147e45024d172f81c540d750390ce3602c059dab"
+sha256 = "827f909955c4c2ae549f431617ded00e753adcda7e2feb5a33d70904e5a197c9"
 
 
 def pre_install(self):
