@@ -1,6 +1,6 @@
 pkgname = "testdisk"
 pkgver = "7.2"
-pkgrel = 0
+pkgrel = 1
 build_style = "gnu_configure"
 hostmakedepends = ["automake", "pkgconf"]
 makedepends = [
